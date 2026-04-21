@@ -1,1 +1,2 @@
 # Sound-adjuster
+Először is a "Bővítmények kezelése" részlegben hozzá kell adni a bővítményt a böngészőhöz, a fájlokat tartalmazó mappa kiválasztásával; ezután a bővítmény folyamatosan fogja figyelni az URL-t, amíg le nem állítjuk. Hogy végbe menjen a hangerő automatikus szabályzása, el kell indítani parancssorból a python servert: ehhez el kell navigálni abba a mappába, ahol a fájlok találhatók, majd futtatni az alábbi parancsot: python server.py
