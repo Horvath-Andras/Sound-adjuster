@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Server Monitor",
+  "version": "1.0",
+  "description": "Folyamatosan figyeli az aktuális tab szerverét.",
+  "permissions": [
+    "tabs",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Szerver Info"
+  }
+}
